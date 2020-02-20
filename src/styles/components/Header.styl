@@ -1,0 +1,43 @@
+.header
+    background-color white
+    display flex
+    justify-content space-between
+    align-items center
+    height 70px
+    padding 0 20px
+    box-shadow 2px 2px 2px #EBEBEB
+    @media screen and (min-width: 768px)
+        height 90px
+        padding 0 38px
+
+.header__left
+    display flex
+    align-items center
+
+.header__navigation
+    display none
+    @media screen and (min-width: 1070px)
+        display initial
+    ul
+        display flex
+        text-transform uppercase
+        margin-left 58px
+        li
+            margin-left 60px
+            color #1D1F24
+            font-size 14px
+            font-weight bolder
+            opacity 0.2
+            cursor pointer
+            &:first-child
+                margin-left 0
+
+.header__hamburguer-button
+    cursor pointer
+    div
+        height 2px
+        margin-top: 5px;
+        width 27px
+        background-color black
+        &:first-child
+            margin-top 0
