@@ -1,0 +1,23 @@
+.home
+    display grid
+    grid-template-columns repeat(1, auto)
+    grid-gap 57px 28px
+    background-color #F9FAFC
+    width 100%
+    padding 40px 40px 122px 40px
+    @media screen and (min-width: 375px)
+        grid-template-columns repeat(2, auto)
+    @media screen and (min-width: 768px)
+        grid-template-columns repeat(3, auto)
+
+
+.home__big-card
+    background-color yellowgreen
+    height 549px
+    grid-row-end span 2
+
+
+.home__small-card
+    background-color yellowgreen
+    height 349px
+    grid-row-end span 1
