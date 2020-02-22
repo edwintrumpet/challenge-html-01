@@ -1,6 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 
-const Home = () => <Header />;
+const Home = () => (
+  <Layout>
+    <h1>Layout Wotks!</h1>
+  </Layout>
+);
 
 export default Home;
