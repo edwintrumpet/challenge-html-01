@@ -16,10 +16,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__main-container">
-        <div>
-          <Brand />
-          <p> © 2018 Deck</p>
-          <p>Component based UI Kit</p>
+        <div className="footer__brand">
+          <Brand footer />
+          <div className="footer__brand-description">
+            <p> © 2018 Deck</p>
+            <p>Component based UI Kit</p>
+          </div>
         </div>
         <ul className="footer__main-list">
           {options.map(name => (
@@ -29,19 +31,23 @@ const Footer = () => {
           ))}
         </ul>
         <div>
-          <div>
+          <div className="footer__icons-container">
+            <span>Follow us:</span>
             {icons.map(icon => (
               <img
                 key={icon}
                 alt="icons-footer"
-                className="footer__icons"
+                className="footer__icons-container--img"
                 src={`/../../resources/imgs/${icon}.png`}
               />
             ))}
           </div>
           <div>
-            <input />
-            <button type="submit">Subscribe</button>
+            <input className="footer__input" />
+            <button className="footer__button" type="submit">
+              {' '}
+              SUBSCRIBE
+            </button>
           </div>
         </div>
       </div>

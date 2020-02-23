@@ -6,6 +6,7 @@ const Header = () => (
   <header className="header">
     <div className="header__left">
       <Brand />
+
       <nav className="header__navigation">
         <ul>
           <li>technology</li>
@@ -20,6 +21,7 @@ const Header = () => (
     </div>
     <div className="header__hamburguer-button">
       <div />
+
       <div />
       <div />
     </div>
