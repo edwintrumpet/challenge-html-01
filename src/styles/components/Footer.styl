@@ -1,3 +1,39 @@
+@media(max-width: 768px)
+  .footer__main-container
+    flex-wrap wrap
+
+  .footer__brand
+    width 30%
+
+  .footer__main-list
+    width 70%
+    grid-template-columns 1fr 1fr 1fr
+
+  .footer__social-contact
+    width 100%
+    display flex
+  
+  .footer__contact
+    width auto
+    display flex
+  
+  .footer__icons-container
+     width auto
+
+  @media(max-width: 320px)
+    .footer__brand
+      width 100%
+
+    .footer__main-list
+      width  100%
+
+    .footer__social-contact
+      width 100%
+    
+    .footer__contact
+      width 100%
+ 
+
 .footer 
   background #1D1F24
   height 160px
@@ -11,7 +47,15 @@
   width 100%
   height 100%
   justify-content space-between
-  align-items center
+  align-items center    
+
+.footer__brand
+  width 20%
+
+.footer__brand-description
+  padding-top 8px
+  font-size 14px
+  color #FFFFFF
 
 .footer__main-list
   width 60%
@@ -31,27 +75,26 @@
   justify-content flex-end
   color grey
   padding-bottom 5px
-   @media screen and (min-width: 768px)
-        height 90px
-        padding 0 38px
+
+.footer__contact
+  margin-top 8px
+  height 35px
 
 .footer__icons-container--img
   width 16px
   height 16px
   margin: 8px
 
-.footer__brand-description
-  padding-top 8px
-  font-size 14px
-  color #FFFFFF
-
-.footer__input
+.footer__contact--input
   width 180px
-  height 35px
+  height 100%
+  color lightgrey
 
-.footer__button
-  height 35px
+.footer__contact--button
+  height 100%
   color white
   background #FF565C
   border none
-  padding 5px
+  padding 10px
+  font-size 12px
+  line-height 20px

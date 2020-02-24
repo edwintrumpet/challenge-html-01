@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div>
+        <div className="footer__social-contact">
           <div className="footer__icons-container">
             <span>Follow us:</span>
             {icons.map(icon => (
@@ -42,9 +42,9 @@ const Footer = () => {
               />
             ))}
           </div>
-          <div>
-            <input className="footer__input" />
-            <button className="footer__button" type="submit">
+          <div className="footer__contact">
+            <input className="footer__contact--input" value="Your E-mail" />
+            <button className="footer__contact--button" type="submit">
               {' '}
               SUBSCRIBE
             </button>
